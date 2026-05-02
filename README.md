@@ -63,6 +63,8 @@ $Q(S_t, A_t)$。這使得它成為**同策略（On-policy）**的方法，因為
 
 根據典型的實驗結果與理論預期：
 
+![Learning Curve](https://github.com/a123ao/hw2/raw/main/learning_curve.png)
+
 - **SARSA 收斂較快且平均獎勵較高**：在訓練的早期，SARSA 的累積獎勵曲線會比
   Q-learning 更快上升，並穩定在一個較高的數值（約 -25
   左右）。因為它在探索時考慮到了 $\epsilon$
@@ -75,6 +77,8 @@ $Q(S_t, A_t)$。這使得它成為**同策略（On-policy）**的方法，因為
 ### 2. 策略行為分析 (路徑視覺化)
 
 如果我們將 $\epsilon$ 設為 0，測試兩種演算法最終學到的純貪婪策略路徑：
+
+![Path Visualization](https://github.com/a123ao/hw2/raw/main/cliff.jpg)
 
 - **Q-learning 學習到的路徑（冒險且最佳化）**：
   - **路徑**：起點 -> 向上一步 -> 一路向右沿著懸崖邊緣走 -> 向下一步到達終點。
